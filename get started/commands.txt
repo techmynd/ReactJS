@@ -1,0 +1,68 @@
+open cmd
+
+go to d drive
+
+d: <<enter
+
+d:\>cd reactJS <<enter
+
+this wil go to reactJS folder in d drive
+
+type nmp and hit enter
+
+
+
+http://localhost:3000/
+
+you need to install node - that will give you npm
+use command prompt to install > create-react-app
+https://github.com/facebook/create-react-app
+and then > npm start on the required folder and localhost will open
+
+========================================================================
+
+
+
+>>>>>>>>>>> to enter in a directory type
+
+d:    and enter
+
+>>>>>>>>>>> go to a folder in d 
+
+cd folder-name       and enter
+
+
+Lets say you are in D drive folder > reactJS and you want to create a project named as my-apps in it
+
+>>>>>>>>>>>> d:\reactJS>create-react-app my-apps
+
+now go to that directory
+
+>>>>>>>>>>>> cd my-apps
+
+and run npm
+
+>>>>>>>>>>>> npm start
+
+===========================================
+
+d:
+cd reactJS
+create-react-app my-app
+
+===========================================
+
+environment instalation 
+
+First step > install nodeJS
+
+second step > open cmd and install create-react-app
+by using 
+npm install create-react-app
+
+and then install app by ucing create-react-app
+
+
+
+
+
