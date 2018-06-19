@@ -66,3 +66,17 @@ and then install app by ucing create-react-app
 
 
 
+npm install --save create-react-app
+npm create-react-app app-name
+
+inside appname
+e.g.
+d:\reactjs>npm create-react-app react-one
+d:\reactjs>cd react-one 
+d:\reactjs\react-one>
+d:\reactjs\react-one>npm start
+
+npm install --save react-router react-router-dom
+npm install --save react-bootstrap
+
+
