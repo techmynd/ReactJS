@@ -74,3 +74,9 @@ Add styling of your choice to your components/ elements in the components - both
 
 
 
+more on data binding
+====================
+https://stackoverflow.com/questions/42217579/data-binding-in-react
+https://github.com/react-toolbox/react-toolbox/issues/652
+https://objectpartners.com/2017/04/24/two-way-data-binding-in-reactjs-part-i/
+https://reactjs.org/docs/two-way-binding-helpers.html
