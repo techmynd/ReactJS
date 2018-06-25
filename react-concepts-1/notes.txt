@@ -1,0 +1,76 @@
+for inline styling
+==================
+
+method 1.
+<input type="text" className="form-control" id="" style={{margin: "0 10px 0 10px"}} />
+
+method 2.
+
+<div className="my-style-2">some text</div>
+<style>{'.my-style-2{color:red;}'}</style>
+
+Output Components
+=================
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import Footer from './components/UI/Footer/Footer';
+
+<Footer />
+
+This <Footer /> will output Footer.js component from components/UI/Footer/
+Full path components/UI/Footer/Footer.js
+
+For Props
+=========
+
+import React, { Component } from 'react';
+
+const Usrname = (props) => {
+return <p>Name {props.thename} Age {props.age}</p>
+};
+
+export default Usrname;
+
+Usage > 
+
+import Usrname from '../Username/Username';
+<Usrname thename="Max" age="28" />
+
+----------------------
+
+import React, { Component } from 'react';
+
+
+class Usrnm extends Component {
+render() {
+return <p>Name {this.props.namee} Age {this.props.theage}</p>
+};
+};
+
+export default Usrnm;
+
+Usage > 
+import Usrnm from '../Username/Usrnm';
+<Usrnm namee="Allen" theage="8" />
+
+=======================================
+
+
+
+
+
+
+Assigmnet Details
+Create TWO new components: UserInput and UserOutput
+UserInput should hold an input element, UserOutput two paragraphs
+Output multiple UserOutput components in the App component (any paragraph texts of your choice)
+Pass a username (of your choice) to UserOutput via props and display it there
+Add state to the App component (=> the username) and pass the username to the UserOutput component
+Add a method to manipulate the state (=> an event-handler method)
+Pass the event-handler method reference to the UserInput component and bind it to the input-change event
+Ensure that the new input entered by the user overwrites the old username passed to UserOutput
+Add two-way-binding to your input (in UserInput) to also display the starting username
+Add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets
+
+
+
