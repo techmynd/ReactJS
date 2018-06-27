@@ -79,4 +79,7 @@ d:\reactjs\react-one>npm start
 npm install --save react-router react-router-dom
 npm install --save react-bootstrap
 
+react navigation
+================
+https://github.com/react-navigation/react-navigation
 
