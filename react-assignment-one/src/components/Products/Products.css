@@ -3,9 +3,10 @@
   margin-bottom: 20px;
 }
 
-.product-box .product-image {
+.product-box .product-image img {
   max-height: 200px;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .product-box .product-name {

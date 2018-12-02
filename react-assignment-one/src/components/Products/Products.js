@@ -52,7 +52,7 @@ class Products extends Component {
 
 							{productsData.map((prodData, index) => {
 								return <div key={prodData.pid} className="col-lg-4 product-box">
-									<div className="product-image"><img src={prodData.pimg} /></div>
+									<div className="product-image"><img src={require('./images/'+prodData.pimg)} /></div>
 									<div className="product-name">{prodData.pname}</div>
 									<div className="product-price">$ {prodData.pprice}</div>
 									<div className="btn btn-primary btn-sm">DETAILS</div>
