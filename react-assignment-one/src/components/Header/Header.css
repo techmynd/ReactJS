@@ -1,0 +1,12 @@
+.header {
+  margin-bottom: 30px;
+}
+
+.logo-link img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  top: -6px;
+}
+/*# sourceMappingURL=Header.css.map */

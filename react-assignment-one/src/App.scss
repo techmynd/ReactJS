@@ -1,0 +1,20 @@
+// scss partials imports
+@import 'styles/reset';
+@import 'styles/fonts';
+@import 'styles/vars';
+@import 'styles/base';
+
+// independent styled components
+@import 'styles/components/buttons';
+@import 'styles/components/ajaxLoader';
+
+// Global CSS to apply to whole site
+
+// Global Header CSS
+
+// Global Footer CSS
+
+#root, .App {
+    height: 100%;
+}
+

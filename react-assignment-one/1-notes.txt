@@ -1,0 +1,11 @@
+Assignment
+==========
+
+1- Use Create-React-App to create reactjs app
+2- Implement Router
+3- Navigation > Home, Products, APIs, About, Contact
+4- Products > Use XMLHttpRequest. fetch or axios to show categories and products from JSON files
+5- APIs > Use ajax to fetch some live json data 
+
+
+

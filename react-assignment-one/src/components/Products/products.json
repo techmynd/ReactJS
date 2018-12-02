@@ -1,0 +1,50 @@
+[	
+	{
+		"pid": 1,
+		"pname": "Honda Civic",
+		"pcat":"cars",
+		"plink": "honda-civic-82726",
+		"pprice":"18000",
+		"pimg":"honda-civic.jpg"
+	},
+	{
+		"pid": 2,
+		"pname": "Lamborghini",
+		"pcat":"cars",
+		"plink": "lambo-625839",
+		"pprice":"40000",
+		"pimg":"lambo.jpg"
+	},
+	{
+		"pid": 3,
+		"pname": "Smart Watch",
+		"pcat":"gadgets",
+		"plink": "smart-watch-6545",
+		"pprice":"8000",
+		"pimg":"smart-watch.jpg"
+	},
+	{
+		"pid": 4,
+		"pname": "Cool Robot",
+		"pcat":"gadgets",
+		"plink": "cool-robot-6543453",
+		"pprice":"2000",
+		"pimg":"cool-robot.jpg"
+	},
+	{
+		"pid": 5,
+		"pname": "Lenovo 7654",
+		"pcat":"computers",
+		"plink": "lenovo-7654",
+		"pprice":"1000",
+		"pimg":"lenovo-pc.jpg"
+	},
+	{
+		"pid": 6,
+		"pname": "Apple MAC",
+		"pcat":"computers",
+		"plink": "apple-mac",
+		"pprice":"1200",
+		"pimg":"apple-mac.jpg"
+	}
+]

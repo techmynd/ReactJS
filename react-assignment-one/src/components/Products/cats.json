@@ -1,0 +1,22 @@
+[	
+	{
+		"cid": 1,
+		"catname": "All",
+		"catlink":"all"
+	},
+	{
+		"cid": 2,
+		"catname": "Cars",
+		"catlink":"cars"
+	},
+	{
+		"cid": 3,
+		"catname": "Gadgets",
+		"catlink":"gadgets"
+	},
+	{
+		"cid": 4,
+		"catname": "Computers",
+		"catlink":"pc"
+	}
+]

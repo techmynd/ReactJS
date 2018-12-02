@@ -1,0 +1,10 @@
+.column-outer-line {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 3px;
+}
+.homepage  {
+    [class^="col-"] {
+        margin-bottom: 40px;
+    }
+}

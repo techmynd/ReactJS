@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 1rem;
+    font-family: $font-regular;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #eee;
+}
+
+.clear, .clear10, .clear20, .clear40, .clear80 {
+    clear: both;
+    font-size: 0;
+}
+.clear10 {
+    height: 10px; line-height: 10px;
+}
+.clear20{
+    height: 20px; line-height: 20px;
+}
+.clear40{
+    height: 40px; line-height: 40px;
+}
+.clear80{
+    height: 80px; line-height: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading;
+}
