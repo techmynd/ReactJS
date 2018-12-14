@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>ReactJS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+</head>
+<body>
+  <br><br>
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-6">
+<h4>Set State</h4>
+<textarea class="form-control" rows="6">
+constructor(props) {
+  super(props);
+
+  this.state = {
+    date: new Date(),
+    counter: 0
+  };
+}
+
+countHandler = () => {
+  this.setState({
+    counter: this.state.counter + 1,
+    date: new Date()
+  });
+};
+<button onClick={this.countHandler}>
+  Counter: {this.state.counter}
+</button>
+</textarea>
+<a href="https://codesandbox.io/s/40wnxm18nw" target="_blank">link</a>
+</div>
+
+<div class="col-md-6">
+<h4>Set State (Better way - (prevState, props) )</h4>
+<textarea class="form-control" rows="6">
+constructor(props) {
+  super(props);
+
+  this.state = {
+    date: new Date(),
+    counter: 0
+  };
+}
+
+countHandler = () => {
+  this.setState((prevState, props) => {
+    return {
+      counter: prevState.counter + 1,
+      date: new Date()
+    };
+  });
+};
+
+<button onClick={this.countHandler}>
+  Counter: {this.state.counter}
+</button>
+</textarea>
+<a href="https://codesandbox.io/s/8k1n1l56v9" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>Constructor</h4>
+<textarea class="form-control" rows="6">
+constructor(props) {
+  super(props);
+  this.state = {
+    isToggleOn: true,
+    counter: 0
+  };
+
+  // This binding is necessary to make 'this' work in the callback
+  this.handleClick = this.handleClick.bind(this);
+}
+</textarea>
+</div>
+
+<div class="col-md-4">
+<h4>onClick handleClick</h4>
+<textarea class="form-control" rows="6">
+constructor(props) {
+  super(props);
+  this.state = {
+    counter: 0
+  };
+
+  // This binding is necessary to make 'this' work in the callback
+  this.handleClick = this.handleClick.bind(this);
+}
+
+   handleClick() {
+      this.setState(state => ({
+        counter: this.state.counter+1
+      }));
+    }
+
+<button onClick={this.handleClick}>
+  {this.state.counter}
+</button>
+</textarea>
+<a href="https://codesandbox.io/s/1r1p4v49p3" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>handleClick and State Example</h4>
+<textarea class="form-control" rows="6">
+constructor(props) {
+  super(props);
+  this.state = {
+    isToggleOn: true
+  };
+
+  // This binding is necessary to make 'this' work in the callback
+  this.handleClick = this.handleClick.bind(this);
+}
+
+handleClick() {
+  this.setState(state => ({
+    isToggleOn: !state.isToggleOn
+  }));
+}
+
+<button onClick={this.handleClick}>
+  {this.state.isToggleOn ? 'ON' : 'OFF'}
+</button>
+</textarea>
+<a href="https://codesandbox.io/s/m5oq2zolzx" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>title</h4>
+<textarea class="form-control" rows="6">
+...
+</textarea>
+<a href="#" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>title</h4>
+<textarea class="form-control" rows="6">
+...
+</textarea>
+<a href="#" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>title</h4>
+<textarea class="form-control" rows="6">
+...
+</textarea>
+<a href="#" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>title</h4>
+<textarea class="form-control" rows="6">
+...
+</textarea>
+<a href="#" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>title</h4>
+<textarea class="form-control" rows="6">
+...
+</textarea>
+<a href="#" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>title</h4>
+<textarea class="form-control" rows="6">
+...
+</textarea>
+<a href="#" target="_blank">link</a>
+</div>
+<div class="col-md-4">
+<h4>title</h4>
+<textarea class="form-control" rows="6">
+...
+</textarea>
+<a href="#" target="_blank">link</a>
+</div>
+
+</div><!--.row ends-->
+</div><!--.container-fluid ends-->
+
+  <br><br>
+</body>
+</html>
