@@ -193,6 +193,80 @@ handleClick() {
 </div><!--.row ends-->
 </div><!--.container-fluid ends-->
 
+
+
+
+
+
+
+
+<div class="container">
+  <table class="table">
+  <thead>
+  <tr>
+  <th>React & JSX Cheatsheet</th>
+  <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>JSX HTML</td>
+  <td><code>&lt;div&gt;...&lt;/div&gt;</code></td>
+  </tr>
+  <tr>
+  <td>JSX Component</td>
+  <td><code>&lt;Component property={javascript} /&gt;</code><br><code>&lt;Component property='string' /&gt;</code></td>
+  </tr>
+  <tr>
+  <td>JSX Component with Children</td>
+  <td><code>&lt;Component&gt;{children}&lt;/Component&gt;</code><br>reference: <code>props.children</code></td>
+  </tr>
+  <tr>
+  <td>Escaping JavaScript</td>
+  <td><code>{...}</code></td>
+  </tr>
+  <tr>
+  <td><code>require</code> statements</td>
+  <td><code>const React = require('react');</code><br><code>const ReactDOM = require('react-dom');</code></td>
+  </tr>
+  <tr>
+  <td><code>npm</code> modules</td>
+  <td><code>react</code>, <code>react-dom</code></td>
+  </tr>
+  <tr>
+  <td>Render in DOM</td>
+  <td><code>ReactDOM.render(&lt;MyApp /&gt;, document.getElementById('root'));</code></td>
+  </tr>
+  <tr>
+  <td>Functional components</td>
+  <td><code>function MyComponent(props) { return &lt;div&gt;...&lt;/div&gt; }</code></td>
+  </tr>
+  <tr>
+  <td>Base class for class components</td>
+  <td><code>React.Component</code></td>
+  </tr>
+  <tr>
+  <td>First statement in constructor</td>
+  <td><code>super(props)</code></td>
+  </tr>
+  <tr>
+  <td>Initializing state</td>
+  <td><code>this.state={...}</code></td>
+  </tr>
+  <tr>
+  <td>Setting state</td>
+  <td><code>this.setState({...})</code></td>
+  </tr>
+  <tr>
+  <td>Referring previous state</td>
+  <td><code>this.setState(prevState =&gt; ({...}))</code><br><code>this.setState((prevState, props) =&gt; ({...}))</code></td>
+  </tr>
+  </tbody>
+  </table>
+  <a href="https://gist.github.com/delibytes/5b4f480427b9e7a923f7a313e58aaca8" target="_blank">Link</a>
+</div>
+
+
   <br><br>
 </body>
 </html>
