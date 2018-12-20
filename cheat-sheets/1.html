@@ -136,11 +136,26 @@ handleClick() {
 </div>
 
 <div class="col-md-4">
-<h4>title</h4>
+<h4>Ref</h4>
 <textarea class="form-control" rows="6">
-...
+//define inline
+<input ref={(node) => { this.inputEmailRef } = node} />
+//or
+ref={node => (this.inputEmailRef = node)}
+// use 
+componentDidMount(){
+  this.inputEmailRef.focus();
+}
+
+// or 
+// define in constructor
+this.inputNameRef = React.createRef();
+// and assign to element 
+<input ref={this.inputEmailRef} />
+// and use  
+this.inputNameRef.current.focus();
 </textarea>
-<a href="#" target="_blank">link</a>
+<a href="https://codesandbox.io/s/03q4olnm3n" target="_blank">link</a>
 </div>
 
 <div class="col-md-4">
