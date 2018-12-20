@@ -159,19 +159,38 @@ this.inputNameRef.current.focus();
 </div>
 
 <div class="col-md-4">
-<h4>title</h4>
+<h4>Function Component</h4>
 <textarea class="form-control" rows="6">
-...
+// define in same file
+function articleOne(props) {
+  return (
+    <div>This is article two</div>
+  );
+}
+// call it in same file 
+<articleOne />
 </textarea>
-<a href="#" target="_blank">link</a>
+<a href="https://codesandbox.io/s/zqxqj6nvl" target="_blank">link</a>
 </div>
 
 <div class="col-md-4">
-<h4>title</h4>
+<h4>Function Component Export</h4>
 <textarea class="form-control" rows="6">
-...
+// define in seperate file
+import React from "react";
+export default function About(props) {
+  return (
+    <div>This is about component as function component</div>
+  );
+}
+// call it in other file 
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import About from "./About";
+<About />
 </textarea>
-<a href="#" target="_blank">link</a>
+</textarea>
+<a href="https://codesandbox.io/s/6vxl3xr953" target="_blank">link</a>
 </div>
 
 <div class="col-md-4">
@@ -210,7 +229,13 @@ this.inputNameRef.current.focus();
 
 
 
-
+<br><br>
+Routing: <br>
+<a href="https://codesandbox.io/s/9l375m9q84" target="_blank">Routing 1 - Simple</a><br>
+<a href="https://codesandbox.io/s/zqxqj6nvl" target="_blank">Routing 2 - Child Page Routing</a><br>
+<a href="https://codesandbox.io/s/62op76mq6w" target="_blank">Routing 3</a><br>
+<a href="https://codesandbox.io/s/m35jmw7j29" target="_blank">Routing - Get Value from URL - match</a><br>
+<br><br>
 
 
 
