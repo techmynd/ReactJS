@@ -358,17 +358,50 @@ class App extends React.Component {
 </div>
 
 <div class="col-md-4">
-<h4>Title</h4>
+<h4>Ajax - Axios</h4>
 <textarea class="form-control" rows="6">
+import axios from "axios";
+
+componentDidMount() {
+  // only in .then you can access data
+  axios.get("https://jsonplaceholder.typicode.com/posts")
+  .then(response => {
+
+      // limit the posts to 4 via slice
+      // const postsLimit = response.data.slice(0, 4);
+
+    this.setState({
+      posts: response.data
+    });
+    //console.log(response);
+  });
+}
+
+<ol className="">
+  {Array.isArray(this.state.posts) &&
+    this.state.posts.map(post => (
+      <li key={post.id}>
+        {post.title}
+        <br />
+        {post.body}
+        <br />
+        <br />
+      </li>
+    ))}
+</ol>
 
 </textarea>
-<a href="#" target="_blank">link</a>
+<a href="https://codesandbox.io/s/r1p42vr14" target="_blank">link</a>
 </div>
 
 <div class="col-md-4">
-<h4>Title</h4>
+<h4>Process if Component has been updated</h4>
 <textarea class="form-control" rows="6">
-
+componentDidUpdate(){
+  if( this.props.id ){
+    ...
+  }
+}
 </textarea>
 <a href="#" target="_blank">link</a>
 </div>
