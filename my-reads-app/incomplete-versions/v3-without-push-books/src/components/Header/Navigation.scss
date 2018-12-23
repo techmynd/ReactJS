@@ -1,0 +1,23 @@
+ .navBottom {
+     list-style-type: none;
+     text-align: center;
+     border-top: 1px solid #ccc;
+     margin: 20px auto;
+     li {
+         display: inline-block;
+         a {
+            display: inline-block;
+            padding: 10px 10px;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+            &:hover {
+                text-decoration: underline;
+            }
+         }
+     }
+ }
+
+ .nav-link.active {
+    background-color: #eee;
+ }
