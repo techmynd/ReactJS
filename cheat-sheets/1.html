@@ -68,6 +68,18 @@ countHandler = () => {
 </div>
 
 <div class="col-md-4">
+<h4>OnClick handleChange / No Bind</h4>
+<textarea class="form-control" rows="6">
+loginHandler = event => {
+  alert("hello");
+};
+
+<button onClick={event => this.loginHandler(event)}>Click Me</button>
+</textarea>
+<a href="https://codesandbox.io/s/6jk98yzy7k" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
 <h4>Constructor</h4>
 <textarea class="form-control" rows="6">
 constructor(props) {
@@ -194,32 +206,201 @@ import About from "./About";
 </div>
 
 <div class="col-md-4">
-<h4>title</h4>
+<h4>Sending props with Route</h4>
 <textarea class="form-control" rows="6">
-...
+// Regular Route
+<Route path='/' component={BookShelf}/>
+// Route including props
+<Route path='/' render={props => (
+    <BookShelf {...props} ppShelfName={"Currently Reading"}  ppBooksStack={this.state.booksCurrentlyReading} />
+)} />
+</textarea>
+</div>
+
+<div class="col-md-4">
+<h4>If/Else JSX</h4>
+<textarea class="form-control" rows="6">
+{ props.something ? 
+  <div className="" style={{ width: 128, height: 193 }}>Show Something</div> 
+: 
+  <div className="">Don't show anything</div> 
+}
+
+// or 
+
+{ props.something ? 
+  <div>Show Something</div>
+: 
+  ''
+}
+
+// or 
+
+{ this.state.something ? 
+  <div>Show Something</div>
+: 
+  ''
+}
+
+// or 
+
+{this.state.loggedin === true ? (
+  <div>LoggedIn</div>
+  ) : (
+    <div>Not loggedIn</div>
+  )
+}
+</textarea>
+<a href="https://codesandbox.io/s/vj3qzn5w3" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>Background Image JSX</h4>
+<textarea class="form-control" rows="6">
+<div className="book-cover" style={{ width: 128, height: 193, backgroundImage:`url( ${props.book.imageLinks.smallThumbnail} )` }}></div>
+</textarea>
+</div>
+<div class="col-md-4">
+<h4>Loop and map</h4>
+<textarea class="form-control" rows="6">
+<ol className="books-grid">
+  {Array.isArray(this.props.ppBooksStack) && this.props.ppBooksStack.map((book) => (
+    <li key={book.id}>
+      
+      {/* <Book 
+      ppBookURL={book.imageLinks.smallThumbnail} 
+      ppBookTitle={book.title}  
+      ppBookAuthors={book.publisher} 
+      ppBookCategory={book.categories} 
+      ppBookShelf={book.shelf}
+      ppBookID={book.id} /> */}
+
+      <Book ppWholeBookObject={book} />
+
+    </li>
+    ))
+  }
+</ol>
+// pass elements from book or whole book object in case you want to pass it to another element 
+// or you can display properties there
+// above example is calling an object in loop and passing its properties as props to Book component
+</textarea>
+</div>
+
+<div class="col-md-4">
+<h4>Inline setState</h4>
+<textarea class="form-control" rows="6">
+<button onClick={() => this.setState({ showSearchPage: true })}>Search books</button>
+</textarea>
+</div>
+
+<div class="col-md-4">
+<h4>Input onChange Pass event and declare props</h4>
+<textarea class="form-control" rows="6">
+<input 
+  type="text" 
+  placeholder="Search by title or author" 
+  value={this.props.ppSearchText} 
+  onChange={(event) => this.props.ppHandleUpdate(event)}
+/>
+
+// or
+
+<input 
+  type="text" 
+  placeholder="Search by title or author" 
+  value={this.searchedText} 
+  onChange={(event) => this.handleUpdate(event)}
+/>
+
+// and then 
+
+handleUpdate = (event) => {
+// get the search text and store in in state
+this.setState({
+  searchedTxt: event.target.value
+})
+</textarea>
+</div>
+
+<div class="col-md-4">
+<h4>Filter from Results or Object or State</h4>
+<textarea class="form-control" rows="6">
+const allBooks = this.state.bookResults;
+//console.log(allBooks);
+let currentlyReading = allBooks.filter(book => book.shelf === "currentlyReading");
+// allBooks.shelf was shelf name entry in object
+// we filtered books with currentlyReading in shelf entry from object
+</textarea>
+</div>
+
+<div class="col-md-4">
+<h4>Class Component</h4>
+<textarea class="form-control" rows="6">
+import React from "react";
+import ReactDOM from "react-dom";
+import "./styles.css";
+
+class App extends React.Component {
+  constructor(props){
+    super(props);
+  }
+  
+  render() {
+    return (
+      <div className="App">
+        ...
+      </div>
+    );
+  }
+}
+</textarea>
+</div>
+
+<div class="col-md-4">
+<h4>Title</h4>
+<textarea class="form-control" rows="6">
+
 </textarea>
 <a href="#" target="_blank">link</a>
 </div>
 
 <div class="col-md-4">
-<h4>title</h4>
+<h4>Title</h4>
 <textarea class="form-control" rows="6">
-...
+
 </textarea>
 <a href="#" target="_blank">link</a>
 </div>
 
 <div class="col-md-4">
-<h4>title</h4>
+<h4>Title</h4>
 <textarea class="form-control" rows="6">
-...
+
 </textarea>
 <a href="#" target="_blank">link</a>
 </div>
+
 <div class="col-md-4">
-<h4>title</h4>
+<h4>Title</h4>
 <textarea class="form-control" rows="6">
-...
+
+</textarea>
+<a href="#" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>Title</h4>
+<textarea class="form-control" rows="6">
+
+</textarea>
+<a href="#" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>Title</h4>
+<textarea class="form-control" rows="6">
+
 </textarea>
 <a href="#" target="_blank">link</a>
 </div>
@@ -230,7 +411,7 @@ import About from "./About";
 
 <div class="container">
 <br><br>
-Routing: <br>
+Routing:<br>
 <a href="https://codesandbox.io/s/9l375m9q84" target="_blank">Routing 1 - Simple</a><br>
 <a href="https://codesandbox.io/s/zqxqj6nvl" target="_blank">Routing 2 - Child Page Routing</a><br>
 <a href="https://codesandbox.io/s/62op76mq6w" target="_blank">Routing 3</a><br>
