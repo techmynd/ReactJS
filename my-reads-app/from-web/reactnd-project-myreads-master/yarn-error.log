@@ -1,0 +1,43 @@
+Arguments: 
+  C:\nodejs\node.exe C:\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\hiroshi\bin;C:\Git\mingw64\bin;C:\Git\usr\local\bin;C:\Git\usr\bin;C:\Git\usr\bin;C:\Git\mingw64\bin;C:\Git\usr\bin;C:\Users\hiroshi\bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\Real\Runtimes;C:\Program Files (x86)\Skype\Phone;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Common Files\Apple\Internet Services;C:\nodejs;C:\Program Files\Theme Kit;E:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Yarn\bin;C:\Go\bin;C:\Ruby25-x64\bin;C:\Users\hiroshi\AppData\Roaming\npm;C:\Users\hiroshi\AppData\Roaming\Composer\vendor\bin;C:\Yarn\bin;C:\Users\hiroshi\go\bin;C:\Users\hiroshi\AppData\Local\now-cli;C:\Program Files\heroku\bin;C:\Git\usr\bin\vendor_perl;C:\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  10.9.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\hiroshi\AppData\Local\Yarn\Cache\v4\npm-eslint-3.16.1-9bc31fc7341692cf772e80607508f67d711c5609\node_modules\eslint\.yarn-tarball.tgz'
+
+npm manifest: 
+  {
+    "dependencies": {
+      "prop-types": "^15.5.8",
+      "react": "^15.5.4",
+      "react-dom": "^15.5.4",
+      "react-key-index": "^0.1.1"
+    },
+    "devDependencies": {
+      "react-router-dom": "^4.1.2",
+      "react-scripts": "0.9.5"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

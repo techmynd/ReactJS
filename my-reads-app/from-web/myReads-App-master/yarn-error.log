@@ -1,0 +1,44 @@
+Arguments: 
+  C:\nodejs\node.exe C:\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\hiroshi\bin;C:\Git\mingw64\bin;C:\Git\usr\local\bin;C:\Git\usr\bin;C:\Git\usr\bin;C:\Git\mingw64\bin;C:\Git\usr\bin;C:\Users\hiroshi\bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\Real\Runtimes;C:\Program Files (x86)\Skype\Phone;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Common Files\Apple\Internet Services;C:\nodejs;C:\Program Files\Theme Kit;E:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Yarn\bin;C:\Go\bin;C:\Ruby25-x64\bin;C:\Users\hiroshi\AppData\Roaming\npm;C:\Users\hiroshi\AppData\Roaming\Composer\vendor\bin;C:\Yarn\bin;C:\Users\hiroshi\go\bin;C:\Users\hiroshi\AppData\Local\now-cli;C:\Program Files\heroku\bin;C:\Git\usr\bin\vendor_perl;C:\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  10.9.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\hiroshi\AppData\Local\Yarn\Cache\v4\npm-babel-preset-env-1.2.1-659178f54df74a74765f796be4d290b5beeb3f5f\node_modules\babel-preset-env\.yarn-tarball.tgz'
+
+npm manifest: 
+  {
+    "dependencies": {
+      "escape-string-regexp": "^1.0.5",
+      "prop-types": "^15.5.10",
+      "react": "^15.5.4",
+      "react-dom": "^15.5.4",
+      "react-router-dom": "^4.1.2",
+      "sort-by": "^1.2.0"
+    },
+    "devDependencies": {
+      "react-scripts": "0.9.5"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
