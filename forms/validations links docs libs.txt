@@ -1,0 +1,13 @@
+https://validatejs.org/
+https://react.rocks/tag/Validation
+https://www.npmjs.com/package/react-validation
+https://github.com/christianalfoni/formsy-react
+
+https://jaredpalmer.com/formik
+https://github.com/jaredpalmer/formik
+
+
+
+
+
+
