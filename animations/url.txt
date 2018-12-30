@@ -1,1 +1,9 @@
+https://github.com/maisano/react-router-transition
+
 https://github.com/reactjs/react-transition-group
+
+https://github.com/chenglou/react-motion
+https://alligator.io/react/react-motion/
+
+https://react-move.js.org/
+
