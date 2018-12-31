@@ -16,7 +16,9 @@ class SearchResults extends React.Component {
         /* Search results were not displaying correct shelf if previously added to library. The fix is to filter all library books and match them against the search results. If a match is found, push the library info (with shelf) to displaying results, and afterwards push the remaining search results. */
         const matchingResults = books.filter(book => book.id === result.id);
         if (matchingResults.length > 0) {
-          /* The spread operator makes sure matching results are copied together with all their properties over to the displayResults array. Without it, we get an error about those results missing their unique key identifier. */
+          /* The spread operator makes sure matching results are copied together with all their properties over to 
+          the displayResults array. 
+          Without it, we get an error about those results missing their unique key identifier. */
           displayResults.push(...matchingResults);
         } else {
           displayResults.push(result);

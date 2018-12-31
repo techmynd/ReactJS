@@ -23,7 +23,8 @@ const Book = (props) => {
         ppBookIDD={props.book.id} 
         ppBookShelff={props.book.shelf} 
         handleSelectThree={props.handleSelectTwo} 
-        ppBookObject={props.book}
+        ppBookObject={props.book} 
+        state={props.state}
         />
 
       </div>

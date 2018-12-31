@@ -455,39 +455,81 @@ axios.get("/posts").then(response => { console.log(response.data) });
 <div class="col-md-4">
 <h4>Axios / Posts / Single Post with Routing</h4>
 <textarea class="form-control" rows="6">
-
+see the link
 </textarea>
 <a href="https://codesandbox.io/s/o95kkq4l8y" target="_blank">link</a>
 </div>
 
 <div class="col-md-4">
-<h4>Title</h4>
+<h4>Pass props, store/call props</h4>
 <textarea class="form-control" rows="6">
-
+// Pass it
+<Bookshelf state={this.state} update={this.updateShelf} />
+// call it at next omponent
+render() {
+  // Destructure props object
+  const { state, update } = this.props;
+}
+// now u can use these 
+let booksReading = state.books.filter(book => book.shelf === "currentlyReading");
 </textarea>
-<a href="#" target="_blank">link</a>
 </div>
 
 <div class="col-md-4">
-<h4>Title</h4>
+<h4>Simple Check</h4>
 <textarea class="form-control" rows="6">
+let booksReading = state.books.filter(book => book.shelf === "currentlyReading");
+{booksReading.length > 0 (<div>...</div)}
+// or
+// if not 
+{!book.imageLinks && (<div></div>)}
+// if
+{book.imageLinks && (<div></div>)}
 
+//or
+// this.props.itemResult can be undefined, null, 0 or {}
+if(!this.props.itemResult){
+  console.log("no data");
+} else {
+  console.log(data);
+}
+// if you want to check initialization
+if(typeof this.props.itemResult === "undefined"){
+  console.log("no data");
+} else {
+  console.log(data);
+}
 </textarea>
-<a href="#" target="_blank">link</a>
 </div>
 
 <div class="col-md-4">
-<h4>Title</h4>
+<h4>Inline Styling</h4>
 <textarea class="form-control" rows="6">
-
+<div className="book-cover" style={{
+  width: 128,
+  backgroundColor: "#aaa",
+  display: "flex",
+  flexWrap: "wrap",
+  alignItems: "center",
+  justifyContent: "center",
+  textTransform: "uppercase"
+}}
+>
+ No Image
+</div>
 </textarea>
-<a href="#" target="_blank">link</a>
 </div>
 
 <div class="col-md-4">
-<h4>Title</h4>
+<h4>Select</h4>
 <textarea class="form-control" rows="6">
-
+<select
+  id={eachBook.id}
+  value={eachBook.shelf ? eachBook.shelf : "none"}
+  onChange={e => update(eachBook, e.target.value)}
+>
+...
+</select>
 </textarea>
 <a href="#" target="_blank">link</a>
 </div>

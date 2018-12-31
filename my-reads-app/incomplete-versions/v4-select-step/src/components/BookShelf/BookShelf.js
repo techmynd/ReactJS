@@ -9,8 +9,8 @@ const BookShelf = props => {
       <div className="bookshelf-books">
         <ol className="books-grid">
           {Array.isArray(props.ppBooksStack) && props.ppBooksStack.map((book) => (
-              <li key={book.id}>
-                <Book book={book} handleSelectTwo={props.handleSelectOne} />
+              <li key={book.id + '1' + props.ppShelfName}>
+                <Book book={book} handleSelectTwo={props.handleSelectOne} state={props.state} />
               </li>
             ))
           }

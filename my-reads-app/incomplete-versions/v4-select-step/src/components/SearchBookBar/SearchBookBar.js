@@ -6,7 +6,7 @@ class SearchBookBar extends Component {
 	render() {
 		return (
       <div className="search-books-bar">
-        <Link to="/"><button className="close-search">Close</button></Link>
+        <Link to="/" onClick={this.props.removeSearch}><button className="close-search">Close</button></Link>
         <div className="search-books-input-wrapper">
           <input 
             type="text" 
