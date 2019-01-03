@@ -3,3 +3,6 @@ https://www.youtube.com/watch?v=Ke90Tje7VS0
 
 css modules
 https://medium.com/nulogy/how-to-use-css-modules-with-create-react-app-9e44bec2b5c2
+
+playlist
+https://www.youtube.com/watch?v=OxIDLw0M-m0&list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG&index=1

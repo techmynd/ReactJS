@@ -1,0 +1,40 @@
+Form validation
+=================
+Redux Form or Formik
+
+https://redux-form.com/8.1.0/
+https://jaredpalmer.com/formik
+
+
+api
+====
+https://www.apollographql.com/
+
+
+state management
+================
+Redux or state
+
+https://redux.js.org/
+https://github.com/jamiebuilds/unstated
+
+
+
+Visual Studio Code plugins
+==========================
+ES7 React/Redux/GraphQL/React-Native snippets
+Sublime Babel
+Babel Javascript
+path intellisence
+Quokka
+Rainbow Brackets
+React Native Tools
+
+
+
+
+
+
+
+
+
