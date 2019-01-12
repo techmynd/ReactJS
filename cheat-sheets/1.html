@@ -15,8 +15,11 @@
 <div class="row">
 
 <div class="col-md-12">
-  <a href="https://codesandbox.io/s/pjqz7vzjvx" target="_blank">Class Based Components / Send Receive Props</a><br>
+  <a href="https://codesandbox.io/s/pjqz7vzjvx" target="_blank">Class Based Components / Send Receive Props</a>
+  <br>
   <a href="https://codesandbox.io/s/xp0nv1mzq" target="_blank">Class & Function Based Components / Send Receive Props</a>
+  <br>
+  <a href="https://codesandbox.io/s/n1k2o9r740" target="_blank">Form Fields / Single handleChange</a>
 </div>
 
 <div class="col-md-6">
@@ -540,11 +543,18 @@ if(typeof this.props.itemResult === "undefined"){
 </div>
 
 <div class="col-md-4">
-<h4>Title</h4>
+<h4>Get Form Values</h4>
 <textarea class="form-control" rows="6">
-
+handleChange = e => {
+  this.setState({
+    [e.target.id]: e.target.value
+  });
+};
+/////////////////////
+<input id="name" onChange={this.handleChange} />
+<input id="age" onChange={this.handleChange} />
 </textarea>
-<a href="#" target="_blank">link</a>
+<a href="https://codesandbox.io/s/n1k2o9r740" target="_blank">link</a>
 </div>
 
 <div class="col-md-4">

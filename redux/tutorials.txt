@@ -1,0 +1,5 @@
+https://egghead.io/lessons/react-redux-the-single-immutable-state-tree
+https://egghead.io/courses/building-react-applications-with-idiomatic-redux
+
+https://redux.js.org/introduction/learning-resources
+
