@@ -1,0 +1,13 @@
+- Link is simple link that will redirect page
+- NavLink will call component without redirecting and will add active class to the link if its active
+- withRouter is a HOC that will supercharge the props for browserRouter and you can use 
+stuff like props.history.push(./pagename) with homepage as well that usually dont receive props in normal condition
+
+
+import { Link, NavLink, withRouter } from 'react-router-dom';
+
+
+
+https://www.youtube.com/watch?v=QUz3k2O3ZJU&list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG&index=25
+https://www.youtube.com/watch?v=AILU8hl-dmo&list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG&index=26
+https://www.youtube.com/watch?v=GiaFedx5cfA&list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG&index=27

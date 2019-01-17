@@ -1,0 +1,1 @@
+hoc to randomize a component color
