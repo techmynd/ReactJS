@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+.collection-item:first-child {
+  border-top: 1px solid #ccc;
+}
+.collection-item {
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  text-align: left;
+}
+
+.del-list {
+  float: right;
+  font-size: 12px;
+  cursor: pointer;
+}
+.addfield {
+  padding: 0 10%;
+}
+.addfield input {
+}
