@@ -3,3 +3,11 @@ https://egghead.io/courses/building-react-applications-with-idiomatic-redux
 
 https://redux.js.org/introduction/learning-resources
 
+best
+https://www.youtube.com/watch?v=sX3KeP7v7Kg
+
+https://www.youtube.com/watch?v=OSSpVLpuVWA
+
+https://www.youtube.com/watch?v=Spui2z-m93g
+
+https://www.youtube.com/watch?v=f87wPQMgF4c&index=39&list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG
