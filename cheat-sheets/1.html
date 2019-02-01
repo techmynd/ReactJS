@@ -716,9 +716,32 @@ handleChange = e => {
 </div>
 
 <div class="col-md-4">
-<h4>Title</h4>
+<h4>Check if props exists</h4>
 <textarea class="form-control" rows="6">
+// coming from main component
+import User from './User';
+// and 
+<User age="30">Mark</User>
+<User age="32">Jill</User>
 
+// functional component (<User />) below with check
+
+const Users(props) => {
+  // check if props age exists // if yes print props else print N/A
+  let age = props.age ? props.age : 'N/A';
+  // check if props.children exist // access content by using children
+  if(props.childen) {
+    return(
+      <div>
+      Name: {props.children} | Age: {age}
+      </div>
+    )
+  } else {
+    return (
+      <div>Invalid Entry</div>
+    )
+  }
+}
 </textarea>
 <a href="#" target="_blank">link</a>
 </div>
