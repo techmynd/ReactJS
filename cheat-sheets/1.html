@@ -154,11 +154,15 @@ const Todos = ({ todos, deleteToDo }) => {}
   // Template Literal // Strings with extra features
   {`Name: ${person.name}, Age: ${person.age}`}
   console.log(`Name: ${person.name}, Age: ${person.age}`);
+  
   // variable inside string
   let escription = `
     Hello, I am ${name}
     Hello, I am ${name + " some other string "}
   `;
+
+  // or class inside template literal
+  <div className={`top ${searchClickClass}`}></div>
 </textarea>
 <a href="" target="_blank">link</a>
 </div>
@@ -743,6 +747,127 @@ const Users(props) => {
     )
   }
 }
+</textarea>
+</div>
+
+<div class="col-md-4">
+<h4>API Template - Get</h4>
+<textarea class="form-control" rows="6">
+// show messages 
+export const fetchMessages = (chatRoomId, baseURL, token, page=1) => {
+  const headers = {
+    'Content-Type': 'application/json',
+    'X-CSRF-TOKEN': token,
+  };
+  const url = new URL(baseURL + '/chat_messages/enlist_messages.json');
+  let params = {
+    chat_room_id: chatRoomId,
+    page: page
+  }
+  Object.keys(params).forEach(key => url.searchParams.append(key, params[key]))
+  return fetch(url, {
+      method: 'get',
+      headers,
+    })
+    .then(results => results.json())
+    .then(data => {
+      if (data) {
+        //console.log(data);
+        return data;
+      }
+    });
+}
+// then 
+import { fetchMessages } from './api'
+fetchMessages = () => {
+  // 
+}
+</textarea>
+</div>
+
+<div class="col-md-4">
+<h4>API Template - Post</h4>
+<textarea class="form-control" rows="6">
+// create chat
+export const createChat = (data, baseURL, token) => {
+  const headers = {
+    'Content-Type': 'application/json',
+    'X-CSRF-TOKEN': token,
+  };
+  const url = baseURL + '/chat_rooms.json';
+  return fetch(url, {
+      method: 'post',
+      headers,
+      body: JSON.stringify(data),
+    })
+    .then(results => results.json())
+    .then(data => {
+      if (data) {
+        //console.log(data);
+        return data;
+      }
+    });
+}
+// then 
+import { createChat } from './api'
+createChat = () => {
+  // 
+}
+</textarea>
+</div>
+
+<div class="col-md-4">
+<h4>Title</h4>
+<textarea class="form-control" rows="6">
+
+</textarea>
+<a href="#" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>Title</h4>
+<textarea class="form-control" rows="6">
+
+</textarea>
+<a href="#" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>Title</h4>
+<textarea class="form-control" rows="6">
+
+</textarea>
+<a href="#" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>Title</h4>
+<textarea class="form-control" rows="6">
+
+</textarea>
+<a href="#" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>Title</h4>
+<textarea class="form-control" rows="6">
+
+</textarea>
+<a href="#" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>Title</h4>
+<textarea class="form-control" rows="6">
+
+</textarea>
+<a href="#" target="_blank">link</a>
+</div>
+
+<div class="col-md-4">
+<h4>Title</h4>
+<textarea class="form-control" rows="6">
+
 </textarea>
 <a href="#" target="_blank">link</a>
 </div>
