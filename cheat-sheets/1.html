@@ -67,6 +67,77 @@
 
 </div>
 
+
+<div class="col-md-6">
+<h4>If Else - Simple</h4>
+<textarea class="form-control" rows="6">
+// before return or after render and before return
+// if props.currentTab has value of Group (string) // then prepare an html to append
+const groupChatName = props.currentTab == 'Groups' ? 
+(
+  <div className="group-chat-name-wrap">
+    <label>Group Chat Name:</label>
+    <input className="form-control group-chat-name" type="text" />
+  </div>
+) : 
+(
+  null
+);
+
+// then inside return call that function 
+{groupChatName}
+</textarea>
+</div>
+
+<div class="col-md-6">
+<h4>If Else - Value from Loop</h4>
+<textarea class="form-control" rows="6">
+// if props.currentTab is not 'Groups' then process onclick function otherwise dont
+
+const createChatSelector = (chatUser)=> {
+    props.currentTab == 'Groups' ?
+    (
+      null
+    ) : 
+    (
+      // this was original function below
+      //onClick={() => props.createNewChat(chatUser)}
+      props.createNewChat(chatUser)
+    );
+  } 
+  
+//////////////////////////////////////////////////////////////////  
+// and then 
+{Array.isArray(props.chatUsers) && props.chatUsers.map((chatUser) =>
+  (
+    <li key={chatUser.id} 
+        onClick={() => createChatSelector(chatUser)}
+        className="single-user-wrap">
+      <div className="flex-row">
+        <div className="single-user-avatar"><img src={`/assets/images${chatUser.image}`} /></div>
+        <div className="single-user-detail">{chatUser.name}</div>
+        
+        {props.currentTab == 'Groups' ? 
+        (
+          <div className="select-user">
+            <div className="checkbox">
+              <label>
+                <input type="checkbox" name={chatUser.id} value={chatUser.id} />
+              </label>
+            </div>
+          </div>
+          ) : (
+            null
+          )
+        }
+
+      </div>
+    </li>
+  ))
+}  
+</textarea>
+</div>
+
 <div class="col-md-6">
 <h4>If Else</h4>
 <textarea class="form-control" rows="6">
