@@ -1,0 +1,7 @@
+push copy of state and new element in state - Carbon copy of state
+
+
+let carbonCopy = [...this.state.ninjas, newNinjaToAdd]
+this.setState({
+	ninjas: carbonCopy
+})

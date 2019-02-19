@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/48870428/how-to-call-multiple-functions-on-the-same-onclick-event-reactjs

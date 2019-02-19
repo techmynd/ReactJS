@@ -1,0 +1,18 @@
+you can use const in function component
+you can use const inside a function 
+but for class components, you can only use const inside render or inside a function
+
+for functional component you can use const anywhere.
+
+
+e.g.
+
+render() {
+  const { name } = GetName(this.props.currentName);
+  return(
+   <div>{name}</div>
+  );
+}
+
+
+

@@ -1,0 +1,4 @@
+in componentDidMount and in render use these to see changing props and state
+
+console.log(props);
+console.log(this.state);

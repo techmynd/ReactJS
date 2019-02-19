@@ -1,0 +1,46 @@
+you can setstate in componentdidmount but cant check it right after that - console.log state in render
+
+
+1- you cant check state in componentdidmount - check it in render
+2- you cant have a function output without return
+
+function will always return first and everything can be inside its return statement
+
+
+
+
+import React from 'react';
+
+export class MembersDropDown extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      groupChatMembers: []
+    }
+  }
+
+  componentDidMount() {
+    const groupChatMembers = this.props.groupChatMembers.map(member => { 
+      return member.user_id 
+    });
+    this.setState({ groupChatMembers });
+  }
+
+  renderGroupChatMembers() {
+    return (
+      this.props.groupChatMembers.map((m) => (
+        <div className="chatroom-mmeber" key={m.id}>
+          {m.user_id}
+        </div>
+      ))
+    )
+  }
+
+  render() {
+    return (
+      <div className="members-dropdown">
+        { this.renderGroupChatMembers() }
+      </div>
+    );
+  }
+}

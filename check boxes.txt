@@ -1,0 +1,4 @@
+https://stackoverflow.com/questions/42662950/react-bind-to-checkbox-and-update-state-base-on-checked
+https://stackoverflow.com/questions/39224165/set-checkbox-value-in-react-js
+https://stackoverflow.com/questions/32174317/how-to-set-default-checked-in-checkbox-reactjs
+https://stackoverflow.com/questions/26615779/react-checkbox-not-sending-onchange
