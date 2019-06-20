@@ -1,5 +1,5 @@
-> npm install --save react-redux
-> yarn add react-redux
+> npm install --save redux react-redux
+> yarn add redux react-redux
 
 
 

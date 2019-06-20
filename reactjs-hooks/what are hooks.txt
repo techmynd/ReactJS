@@ -1,0 +1,12 @@
+by using hooks you can use lifecycle methods in functional components.
+and state in functional components.
+
+react 16.8.0 and + has got hooks support
+
+hooks
+=====
+useState();
+
+
+
+
