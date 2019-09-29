@@ -908,27 +908,136 @@ createChat = () => {
 </div>
 
 <div class="col-md-4">
-<h4>Title</h4>
+<h4>Load users with condition</h4>
 <textarea class="form-control" rows="6">
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import axios from "axios";
+
+import "./styles.css";
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      users: [],
+      loading: false
+    };
+  }
+  getUsers() {
+    this.setState({
+      loading: true
+    });
+    axios("https://api.randomuser.me/?nat=US&results=5").then(response =>
+      this.setState({
+        users: response.data.results,
+        loading: false
+      })
+    );
+  }
+  componentWillMount() {
+    this.getUsers();
+  }
+  render() {
+    if (!this.state.loading) {
+      console.log(this.state.users);
+    } else {
+      //console.log("loading..");
+    }
+    return (
+      <div className="App">
+        <h1>Users</h1>
+        {!this.state.loading
+          ? this.state.users.map(user => (
+              <div>
+                {user.name.first} {user.name.last}
+              </div>
+            ))
+          : "Loading..."}
+      </div>
+    );
+  }
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 
 </textarea>
-<a href="#" target="_blank">link</a>
 </div>
 
 <div class="col-md-4">
-<h4>Title</h4>
+<h4>Loading Component Seperate With Custom Message</h4>
 <textarea class="form-control" rows="6">
+// loading.js 
+import React from "react";
+// destructuring instead of props
+const Loading = ({ message }) => <div>{message}</div>;
+export default Loading;
+
+// app.js 
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import axios from "axios";
+import Loading from "./Loading";
+
+import "./styles.css";
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      users: [],
+      loading: false
+    };
+  }
+  getUsers() {
+    this.setState({
+      loading: true
+    });
+    axios("https://api.randomuser.me/?nat=US&results=5").then(response =>
+      this.setState({
+        users: response.data.results,
+        loading: false
+      })
+    );
+  }
+  componentWillMount() {
+    this.getUsers();
+  }
+  render() {
+    if (!this.state.loading) {
+      console.log(this.state.users);
+    } else {
+      //console.log("loading..");
+    }
+    return (
+      <div className="App">
+        <h1>Users</h1>
+        {!this.state.loading ? (
+          this.state.users.map(user => (
+            <div key={user.id.value}>
+              {user.name.first} {user.name.last}
+            </div>
+          ))
+        ) : (
+          <Loading message="Loading..." />
+        )}
+      </div>
+    );
+  }
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 
 </textarea>
-<a href="#" target="_blank">link</a>
 </div>
 
 <div class="col-md-4">
-<h4>Title</h4>
+<h4>Inline Styling // Style</h4>
 <textarea class="form-control" rows="6">
-
+  <p style={{ color: 'red' }}></p>
 </textarea>
-<a href="#" target="_blank">link</a>
 </div>
 
 <div class="col-md-4">
