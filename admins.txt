@@ -1,0 +1,3 @@
+https://github.com/admin-dashboards/react-dashboard-shards-lite
+https://marmelab.com/react-admin/
+
